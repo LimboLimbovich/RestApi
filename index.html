@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Information App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>User Information</h1>
+			<div class="controls">
+				<label for="sortSelect">Sort by:</label>
+				<select id="sortSelect">
+					<option value="name.first">First Name</option>
+					<option value="name.last">Last Name</option>
+					<option value="email">Email</option>
+					<option value="phone">Phone</option>
+				</select>
+				<label for="filterInput">Filter by:</label>
+				<input type="text" id="filterInput" placeholder="Enter name or email" />
+				<button id="refreshButton">Refresh</button>
+			</div>
+			<div id="userList"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
